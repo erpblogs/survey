@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+<!--        <template id="aboutus_inherit" inherit_id="website.aboutus">-->
+<!--            <xpath expr="//div[@id='wrap']" position="replace">-->
+<!--                <div id="wrap">-->
+<!--                    <div>-->
+<!--                        <img src="https://survey.com.vn/wp-content/uploads/2020/04/intro-banner-1.jpg"-->
+<!--                             alt="survey about banner"-->
+<!--                             style="height: auto; max-width: 100%;"/>-->
+<!--                    </div>-->
+<!--                    <div class="container">-->
+<!--                        <p class="p1"-->
+<!--                           style="margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding: 50px 24px;">-->
+<!--                            <span style="font-size: 20px; color: rgb(0, 92, 153); text-align: justify;">Quang can support-->
+<!--                                offshore development-->
+<!--                                and evaluation for customers in various field of software development as finance,-->
+<!--                                insurance, e-commerce, manufacturing and internet services. We commit to contribute to-->
+<!--                                your business with the most appropriate resources and reasonable costs.-->
+<!--                            </span>-->
+<!--                        </p>-->
+<!--                        <div class="row" style="padding: 50px 24px 0;">-->
+<!--                            <div class="col-lg-8">-->
+<!--                                <table style="border-spacing: 0px; width: 100%; margin: 0px; border: 0px; height: 369px;">-->
+<!--                                    <tbody>-->
+<!--                                        <tr style="border-width: 0px 0px 1px; border-top-style: initial; border-right-style: initial; border-bottom-style: solid; border-left-style: initial; border-top-color: initial; border-right-color: initial; border-bottom-color: rgb(41, 127, 146); border-left-color: initial; border-image: initial; padding-top: 15px; padding-bottom: 15px; color: rgb(0, 92, 153);">-->
+<!--                                            <td width="376"-->
+<!--                                                style="vertical-align: top; padding: 0.6rem 1rem; border: 0px; max-width: 145px; font-weight: bold; margin: 0px; font-size: 16px; width: 169px; outline: none !important; word-break: unset !important;">-->
+<!--                                                Company name-->
+<!--                                            </td>-->
+<!--                                            <td style="vertical-align: top; padding: 0.6rem 1rem; border: 0px; width: 614px; height: 49px; outline: none !important; word-break: unset !important;">-->
+<!--                                                Quang Joint Stock Company-->
+<!--                                            </td>-->
+<!--                                        </tr>-->
+<!--                                        <tr style="border-width: 0px 0px 1px; border-top-style: initial; border-right-style: initial; border-bottom-style: solid; border-left-style: initial; border-top-color: initial; border-right-color: initial; border-bottom-color: rgb(41, 127, 146); border-left-color: initial; border-image: initial; padding-top: 15px; padding-bottom: 15px; color: rgb(0, 92, 153); height: 28px;">-->
+<!--                                            <td style="vertical-align: top; padding: 0.6rem 1rem; border: 0px; max-width: 145px; font-weight: bold; margin: 0px; font-size: 16px; width: 169px; height: 25px; outline: none !important; word-break: unset !important;">-->
+<!--                                                Establishment-->
+<!--                                            </td>-->
+<!--                                            <td style="vertical-align: top; padding: 0.6rem 1rem; border: 0px; width: 614px; height: 25px; outline: none !important; word-break: unset !important;">-->
+<!--                                                August 2017-->
+<!--                                            </td>-->
+<!--                                        </tr>-->
+<!--                                        <tr style="border-width: 0px 0px 1px; border-top-style: initial; border-right-style: initial; border-bottom-style: solid; border-left-style: initial; border-top-color: initial; border-right-color: initial; border-bottom-color: rgb(41, 127, 146); border-left-color: initial; border-image: initial; padding-top: 15px; padding-bottom: 15px; color: rgb(0, 92, 153); height: 28px;">-->
+<!--                                            <td style="vertical-align: top; padding: 0.6rem 1rem; border: 0px; max-width: 145px; font-weight: bold; margin: 0px; font-size: 16px; width: 169px; height: 25px; outline: none !important; word-break: unset !important;">-->
+<!--                                                Representative-->
+<!--                                            </td>-->
+<!--                                            <td style="vertical-align: top; padding: 0.6rem 1rem; border: 0px; width: 614px; height: 25px; outline: none !important; word-break: unset !important;">-->
+<!--                                                CEO&#160; TRAN XUAN KHOI-->
+<!--                                            </td>-->
+<!--                                        </tr>-->
+<!--                                        <tr style="border-width: 0px 0px 1px; border-top-style: initial; border-right-style: initial; border-bottom-style: solid; border-left-style: initial; border-top-color: initial; border-right-color: initial; border-bottom-color: rgb(41, 127, 146); border-left-color: initial; border-image: initial; padding-top: 15px; padding-bottom: 15px; color: rgb(0, 92, 153);">-->
+<!--                                            <td style="vertical-align: top; padding: 0.6rem 1rem; border: 0px; max-width: 145px; font-weight: bold; margin: 0px; font-size: 16px; width: 169px; outline: none !important; word-break: unset !important;">-->
+<!--                                                Address-->
+<!--                                            </td>-->
+<!--                                            <td style="vertical-align: top; padding: 0.6rem 1rem; border: 0px; width: 614px; outline: none !important; word-break: unset !important;">-->
+<!--                                                <span style="font-weight: bolder;">Quang Joint-->
+<!--                                                    Stock-->
+<!--                                                    Company-->
+<!--                                                </span>-->
+<!--                                                <br/>-->
+<!--                                                <span style="font-family: inherit; font-size: inherit;">-->
+<!--                                                    6F AC Building, 78 Duy Tan, Cau Giay, Hanoi,-->
+<!--                                                    Vietnam-->
+<!--                                                    <br/>-->
+<!--                                                </span>-->
+<!--                                                Tel: (+84) 24-7303-9996-->
+<!--                                                <br/>-->
+<!--                                                <span style="font-weight: bolder;">Quang Japan-->
+<!--                                                </span>-->
+<!--                                                <br/>3F A-Z Cube Building, 1-2-9 Koraku,-->
+<!--                                                Bunkyo-ku,-->
+<!--                                                Tokyo<br/>Tel: (+81) 3-6261-5698&#160; &#160;-->
+<!--                                                &#160;-->
+<!--                                                &#160; &#160; &#160; Fax: (+81) 3-6261-5637-->
+<!--                                            </td>-->
+<!--                                        </tr>-->
+<!--                                        <tr style="border-width: 0px 0px 1px; border-top-style: initial; border-right-style: initial; border-bottom-style: solid; border-left-style: initial; border-top-color: initial; border-right-color: initial; border-bottom-color: rgb(41, 127, 146); border-left-color: initial; border-image: initial; padding-top: 15px; padding-bottom: 15px; color: rgb(0, 92, 153); height: 28px;">-->
+<!--                                            <td style="vertical-align: top; padding: 0.6rem 1rem; border: 0px; max-width: 145px; font-weight: bold; margin: 0px; font-size: 16px; width: 169px; height: 25px; outline: none !important; word-break: unset !important;">-->
+<!--                                                Employees-->
+<!--                                            </td>-->
+<!--                                            <td style="vertical-align: top; padding: 0.6rem 1rem; border: 0px; width: 614px; height: 25px; outline: none !important; word-break: unset !important;">-->
+<!--                                                478 (As of 2020/08/01)-->
+<!--                                            </td>-->
+<!--                                        </tr>-->
+<!--                                        <tr style="border-width: 0px 0px 1px; border-top-style: initial; border-right-style: initial; border-bottom-style: solid; border-left-style: initial; border-top-color: initial; border-right-color: initial; border-bottom-color: rgb(41, 127, 146); border-left-color: initial; border-image: initial; padding-top: 15px; padding-bottom: 15px; color: rgb(0, 92, 153); height: 28px;">-->
+<!--                                            <td style="vertical-align: top; padding: 0.6rem 1rem; border: 0px; max-width: 145px; font-weight: bold; margin: 0px; font-size: 16px; width: 169px; height: 46px; outline: none !important; word-break: unset !important;">-->
+<!--                                                Subsidiaries-->
+<!--                                            </td>-->
+<!--                                            <td style="vertical-align: top; padding: 0.6rem 1rem; border: 0px; width: 614px; height: 46px; outline: none !important; word-break: unset !important;">-->
+<!--                                                <ul style="list-style-position: initial; list-style-image: initial; margin-right: 0px; margin-bottom: 0px; margin-left: 20px; padding: 0px; display: flex; flex-flow: wrap;">-->
+<!--                                                    <li style="margin: 0px 0px 0.5rem; flex-basis: 50%;">-->
+<!--                                                        <a href="https://surveycloud.io/"-->
+<!--                                                           target="_blank"-->
+<!--                                                           rel="noopener noreferrer"-->
+<!--                                                           style="background-image: none; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; transition-property: background, box-shadow, border, color, opacity, transform; transition-duration: 0.3s; color: rgb(0, 92, 153); outline: none !important;">-->
+<!--                                                            Quang&#160;Cloud-->
+<!--                                                        </a>-->
+<!--                                                    </li>-->
+<!--                                                    <li style="margin: 0px; flex-basis: 50%;">-->
+<!--                                                        <a href="https://surveyacademy.edu.vn/"-->
+<!--                                                           target="_blank"-->
+<!--                                                           rel="noopener noreferrer"-->
+<!--                                                           style="background-image: none; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; transition-property: background, box-shadow, border, color, opacity, transform; transition-duration: 0.3s; color: rgb(0, 92, 153); outline: none !important;">-->
+<!--                                                            Quang&#160;Academy-->
+<!--                                                        </a>-->
+<!--                                                    </li>-->
+<!--                                                </ul>-->
+<!--                                            </td>-->
+<!--                                        </tr>-->
+<!--                                        <tr style="border: 0px; padding-top: 15px; padding-bottom: 15px; color: rgb(0, 92, 153); height: 28px;">-->
+<!--                                            <td style="vertical-align: top; padding: 0.6rem 1rem; border: 0px; max-width: 145px; font-weight: bold; margin: 0px; font-size: 16px; width: 169px; height: 12px; outline: none !important; word-break: unset !important;">-->
+<!--                                                Business-->
+<!--                                            </td>-->
+<!--                                            <td style="vertical-align: top; padding: 0.6rem 1rem; border: 0px; width: 614px; height: 12px; outline: none !important; word-break: unset !important;">-->
+<!--                                                <ul style="list-style-position: initial; list-style-image: initial; margin-right: 0px; margin-bottom: 0px; margin-left: 20px; padding: 0px; display: flex; flex-flow: wrap;">-->
+<!--                                                    <li style="margin: 0px 0px 0.5rem; flex-basis: 50%;">-->
+<!--                                                        Business Application-->
+<!--                                                    </li>-->
+<!--                                                    <li style="margin: 0px 0px 0.5rem; flex-basis: 50%;">-->
+<!--                                                        Mobile Application-->
+<!--                                                    </li>-->
+<!--                                                    <li style="margin: 0px 0px 0.5rem; flex-basis: 50%;">-->
+<!--                                                        Web System-->
+<!--                                                    </li>-->
+<!--                                                    <li style="margin: 0px 0px 0.5rem; flex-basis: 50%;">-->
+<!--                                                        Cloud Computing-->
+<!--                                                    </li>-->
+<!--                                                    <li style="margin: 0px 0px 0.5rem; flex-basis: 50%;">-->
+<!--                                                        IoT Application-->
+<!--                                                    </li>-->
+<!--                                                    <li style="margin: 0px; flex-basis: 50%;">AI-->
+<!--                                                        Service-->
+<!--                                                    </li>-->
+<!--                                                </ul>-->
+<!--                                            </td>-->
+<!--                                        </tr>-->
+<!--                                    </tbody>-->
+<!--                                </table>-->
+<!--                            </div>-->
+<!--                            <div class="col-lg-4 d-flex flex-column align-items-center text-primary">-->
+<!--                                <img src="https://survey.com.vn/wp-content/uploads/2020/04/anh-khoi.png"-->
+<!--                                     alt="survey ceo"-->
+<!--                                     style="height: auto; max-width: 85%;"/>-->
+<!--                                <div style="text-align: center;">-->
+<!--                                    <span>CEO</span>-->
+<!--                                </div>-->
+<!--                                <div>-->
+<!--                                    <div style="text-align: center;">-->
+<!--                                        <span>-->
+<!--                                            <span style="font-weight: bolder;">TRAN XUAN KHOI-->
+<!--                                            </span>-->
+<!--                                        </span>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+
+<!--                        </div>-->
+<!--                        <div class="d-flex flex-wrap justify-content-center">-->
+<!--                            <p class="py-4" style="text-align: center; text-transform: uppercase; font-size: 32px; font-weight: 500;">-->
+<!--                                <span class="text-primary">-->
+<!--                                    <strong>ACCESS</strong>-->
+<!--                                </span>-->
+<!--                            </p>-->
+<!--                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.006870543984!2d105.7807016153592!3d21.032411093028625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab4b58c6ca41%3A0xd3a04517e755f35b!2ssurvey%20Corporation!5e0!3m2!1svi!2s!4v1598804874383!5m2!1svi!2s"-->
+<!--                                    width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""-->
+<!--                                    aria-hidden="false" tabindex="0"></iframe>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <a id="goTop" href="#" title="Back to top">Go top</a>-->
+<!--            </xpath>-->
+<!--        </template>-->
+    </data>
+</odoo>

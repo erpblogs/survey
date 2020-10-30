@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+<!--        <template id="layout_survey_footer_inherit" inherit_id="website.layout" name="Footer">-->
+<!--            <xpath expr="//footer" position="replace">-->
+<!--                <div class="footer pt-4 copyright-border">-->
+<!--                    <div class="container">-->
+<!--                        <div class="d-flex flex-column align-items-center text-primary">-->
+<!--                            <h5 class="text-primary mt-1 mb-1">Quang Joint Stock Company</h5>-->
+<!--                            <p>Email: info@survey.com.vn</p>-->
+<!--                            <p>Telephone: (+84) 24 7303 9996</p>-->
+<!--                            <p>Adress: 6F, AC Building, 78 Duy Tan, Cau Giay, Hanoi</p>-->
+<!--                        </div>-->
+<!--                        <div class="d-flex flex-row justify-content-center align-items-center p-2 border-top text-center text-primary mb-0">-->
+<!--                            <span>-->
+<!--                                Copyright ©2019 Quang Corporation All Rights Reserved.&#160;&#160;-->
+<!--                            </span>-->
+<!--                            <t t-call="website.language_selector"/>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </xpath>-->
+<!--        </template>-->
+    </data>
+</odoo>

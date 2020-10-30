@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <template id="homepage_inherit" inherit_id="website.homepage">
+            <xpath expr="//div[@id='wrap']" position="replace">
+                <div class="home-page">
+                    <div class="bg-menu p-4">
+                        <div class="container ">
+                            <div class="d-flex flex-wrap justify-content-center">
+                                <div class="p-2 menu-icon border m-2 rounded">
+                                    <a href="#" class="text-secondary url-text-hover">
+                                        Survey 1
+                                    </a>
+                                </div>
+                                <div class="p-2 menu-icon border m-2 rounded">
+                                    <a href="#" class="text-secondary url-text-hover">
+                                        Survey 2
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a id="goTop" href="#" title="Back to top">Go top</a>
+            </xpath>
+        </template>
+    </data>
+</odoo>

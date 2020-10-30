@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <template id="header_layout_inherit" inherit_id="website.layout" name="Header ">
+            <xpath expr="//header" position="replace">
+                <div id="menuMobile"></div>
+                <div class="ow-navigation sticky-top py-1">
+                    <div class="container d-flex flex-column align-items-center flex-md-row justify-content-between">
+                        <div class="d-xl-none navicon col col-auto bg-warning p-2">
+                            <a class="text-white" id="currentMenu" href="#menuMobile">
+                                <i class="fa fa-navicon"></i>
+                            </a>
+                        </div>
+                        <a class="navbar-brand" href="/">
+                            <!--                            <img t-att-src="'/icon.png?company=%s' % res_company.id"-->
+                            <!--                                 t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name"/>-->
+                            <img src="/survey_theme/static/src/images/icon.png"
+                                 alt="Logo of Quang" title="Quang Logo"/>
+                        </a>
+                        <ul id="menuMain" class="d-none d-xl-inline-flex  nav nav-pills nav-fill">
+                            <li class="nav-item p-1 pl-3 pr-3">
+                                <a href="/">Home</a>
+                            </li>
+                            <li class="nav-item p-1 pl-3 pr-3">
+                                <a href="/blog">News</a>
+                            </li>
+                            <li class="nav-item p-1 pl-3 pr-3">
+                                <a href="#">Survey</a>
+                                <ul>
+                                    <li>
+                                        <a href="#">Survey 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Survey 1</a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li class="nav-item p-1 pl-3 pr-3">
+                                <a href="/contactus">Contact Us</a>
+                            </li>
+                            <li class="nav-item p-1 pl-3 pr-3" t-if="not uid">
+                                <a  href="/web/login">Sign in</a>
+                            </li>
+                            <li class="nav-item p-1 pl-3 pr-3" t-ignore="true" t-if="not user_id._is_public()">
+                                <a href="#">
+                                    <b>
+                                        <span t-esc="user_id.name[:23] + '...' if user_id.name and len(user_id.name) &gt; 25 else user_id.name"/>
+                                    </b>
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a id="user_home" href="/my/home">My home</a>
+                                    </li>
+                                    <li>
+                                        <a id="user_my" href="/my/account">My account</a>
+                                    </li>
+                                    <li>
+                                        <a id="o_logout" t-attf-href="/web/session/logout?redirect=/">Logout</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </xpath>
+        </template>
+    </data>
+</odoo>

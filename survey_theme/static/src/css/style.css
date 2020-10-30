@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,400i,600,700&subset=vietnamese");
+body,ul,li{margin: 0;padding: 0;list-style: none;}
+body{font: 600 14px/21px 'Nunito Sans', 'sans-serif';background: #fff;line-height: 23px;}
+a,a:focus,a:visited,a:active{text-decoration: none;color: #000;}
+a:hover{cursor: pointer;text-decoration: none;-webkit-transition: all 0.4s ease 0s;transition: all 0.4s ease 0s;}
+.relative{position: relative}
+p{margin-bottom: 10px;}
+img{max-width:100%!important}
+.font-small{font-size: 75%}
+.text-color-custom{color: #253b80}
+.bg-custom{background: #253b80}
+.btn-custom{
+    background: #e9ae06;
+    border-radius: 6px;
+    border-color: #e9ae06;
+}
+.btn-custom:hover{
+    background: #d4a00b;
+    border-color: #d4a00b;
+}
+/*Header*/
+.ow-navigation{
+    background: #253b80
+}
+.ow-navigation .nav>li{
+    border-right: 1px solid #ddd;
+    position: relative
+}
+.ow-navigation .nav>li:last-child{border-right: none}
+.ow-navigation .nav li a{
+    color: #fff;
+    /*color: #007bff;*/
+    font-size: 15px;
+}
+.ow-navigation .nav li a:hover{
+    color: #FFEB3B;
+}
+.ow-navigation .nav>li> a:before{
+    content: "";
+    height: 2px;
+    left: 20%;
+    width: 0;
+    bottom: -2px;
+    background-color: #FFEB3B;
+    position: absolute;
+    -webkit-transition: all 1s ease 0s;
+    -moz-transition: all 1s ease 0s;
+    -o-transition: all 1s ease 0s;
+    transition: all 1s ease 0s;
+}
+.ow-navigation .nav>li:hover > a:before{
+    width: 60%;
+}
+.ow-navigation .nav>li>ul{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    min-width: 100%;
+    padding: 5px 0;
+    margin: 1px 0 0;
+    text-align: left;
+    list-style: none;
+    background-color: rgba(255,255,255,.9);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 2px;
+    -webkit-box-shadow: 0 3px 3px rgba(0,0,0,.175);
+    box-shadow: 0 3px 3px rgba(0,0,0,.175);
+    transition: all .3s ease;
+
+}
+.ow-navigation .nav>li:hover>ul{display: block}
+.ow-navigation .nav>li>ul>li{padding: 7px 10px;border-bottom: 1px solid #dcd8d8}
+.ow-navigation .nav>li>ul>li:last-child{border-bottom: none}
+.ow-navigation .nav>li>ul>li>a{white-space: nowrap; color:#253b80}
+.ow-navigation .nav.nav-fill>li.has-sub>a:after,
+.ow-navigation ul ul li.has-sub>a:after{
+    margin-left: 10px;
+    content: "\f107";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    font-size: 14px;
+    transform: translateY(-50%);
+}
+.ow-navigation ul ul li.has-sub>a:after{
+    content: "\f105"!important;
+    position: absolute;
+    top: 45%;
+    right: 10px;
+}
+
+.navbar-brand > img{
+    height: 50px;
+}
+/*Slider*/
+.slider-sync1{
+    position: absolute;width :100%;
+    left: 0;top: 0;
+    z-index: 1;
+}
+.slider-sync2{
+    background: rgba(255,255,255,.7);
+    width: 35%;
+    z-index: 2;
+    position: relative;
+    display: inline-block;
+}
+.owl-dots {
+    display: none
+}
+
+.slider-sync2 .owl-prev,.slider-sync2 .owl-next {
+    position: absolute;
+    opacity: .8;
+    padding: 5px 4px;
+    color: #000;
+    top: 50%;
+    margin-top: -25px;
+    text-align: center;
+    line-height: 18px;
+}
+
+.slider-sync2 .owl-prev:hover,.slider-sync2 .owl-next:hover {
+    opacity: 1
+}
+
+.slider-sync2 .owl-nav .disabled {
+    background: #ddd!important;
+    opacity: .9
+}
+
+.slider-sync2 .owl-prev {
+    left: 0;
+}
+
+.slider-sync2 .owl-next {
+    right: 0;
+}
+
+.slider-sync2 .owl-prev:before {
+    content: "\f104";
+    font: 45px/1 FontAwesome
+}
+
+.slider-sync2 .owl-next:before {
+    content: "\f105";
+    font: 45px/1 FontAwesome
+}
+.slider-sync2 .title{
+
+}
+/*Service*/
+.service{
+    background: #179bd7;
+}
+.service .row{margin-left: 0;margin-right: 0;}
+.service .card:not(.view):hover:before{
+    content: "";
+    background: rgba(0,0,0,.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    height: 100%;
+}
+.service .card-name,.service .date{
+    background: rgba(0,0,0,0.6);
+    padding: 5px;
+    line-height: 18px;
+    z-index: 2;
+}
+.service .date{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    width: 50px;
+    text-align: left;
+    padding-left: 10px;
+}
+.service .card-name{
+    padding-right: 15px;
+}
+.service .card-name a:after{
+    font: 15px/1 FontAwesome;
+    content: "\f105"!important;
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+    right: 7px;
+}
+/*About*/
+.accordion .card-header.active{
+    background: #46a5e5;
+}
+.accordion .card-header.active button{
+    color: #fff;
+}
+/*Slogan*/
+.bottom-message{
+    background: #edeaea;
+}
+/*Footer*/
+.footer{
+    background: #ffffff;
+}
+.copyright-border .border-top {
+    border-top-color: #007bff !important;
+}
+
+/*Loading*/
+#loading{position:fixed;background: rgba(255,255,255,.7);background-attachment:fixed;top:0;left:0;bottom:0;right:0;z-index:99999}
+.loading{position:absolute;left:50%;top:50%;margin-top:-31px;margin-left:-31px;border-bottom:2px solid rgba(0,0,0,0.1);border-left:2px solid rgba(0,0,0,0.1);border-right:2px solid rgba(0,0,0,0.1);border-top:2px solid red;border-radius:100%;height:50px;width:50px;animation:rot .6s infinite linear}
+#goTop {position: fixed;bottom: 20px;right: 10px;cursor: pointer;display: none;z-index: 10000;font-size: 25px;background: rgba(0,0,0,.2);border-radius: 50%;padding: 5px 10px}
+/*Amination*/
+@keyframes rot{from{transform:rotate(0deg)}to{transform:rotate(359deg)}}@-webkit-keyframes rot{from{transform:rotate(0deg)}to{transform:rotate(359deg)}}
+.animated{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both;}
+/*-webkit-keyframes fadeInDown{from{opacity:0;-webkit-transform:translate3d(0, -100%, 0);transform:translate3d(0, -100%, 0);} 100% {opacity:1;-webkit-transform:none;transform:none;}}*/
+@keyframes fadeInDown{from{opacity:0;-webkit-transform:translate3d(0, -100%, 0);transform:translate3d(0, -100%, 0);} 100%{opacity:1;-webkit-transform:none;transform:none;}}
+.fadeInDown{-webkit-animation-name:fadeInDown;animation-name:fadeInDown;}
+

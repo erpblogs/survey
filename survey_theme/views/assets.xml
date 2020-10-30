@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="survey_assets_frontend" name="survey assets frontend" inherit_id="website.assets_frontend">
+        <xpath expr="." position="inside">
+            <script type="text/javascript" src="/survey_theme/static/src/js/popper.min.js"></script>
+<!--            <script type="text/javascript" src="/survey_theme/static/src/js/bootstrap.min.js"></script>-->
+            <script type="text/javascript"
+                    src="/survey_theme/static/src/menu/js/jquery.mmenu.min.all.js"></script>
+            <script type="text/javascript" src="/survey_theme/static/src/js/common.js"></script>
+        </xpath>
+        <xpath expr="link[last()]" position="after">
+            <link rel="stylesheet" type="text/css" href="/survey_theme/static/src/css/bootstrap.min.css"/>
+            <link rel="stylesheet" type="text/css" href="/survey_theme/static/src/menu/css/jquery.mmenu.all.css"/>
+            <link rel="stylesheet" type="text/css" href="/survey_theme/static/src/css/font-awesome.min.css"/>
+            <link rel="stylesheet" type="text/css" href="/survey_theme/static/src/css/style.css"/>
+            <link rel="stylesheet" type="text/css" href="/survey_theme/static/src/css/mobile.css"/>
+            <link rel="shortcut icon" type="image/png" href="/survey_theme/static/src/images/icon.png"/>
+            <link rel="stylesheet" type="text/scss" href="/survey_theme/static/src/scss/style.scss"/>
+        </xpath>
+    </template>
+
+    <template id="survey_web_layout" inherit_id="web.layout">
+        <xpath expr="//title" position="replace"></xpath>
+        <xpath expr="//link[@rel='shortcut icon']" position="replace">
+            <!--            <t t-set="favicon"-->
+            <!--               t-value="request.env['ir.config_parameter'].get_param('web_debranding.favicon_url', '').strip()"/>-->
+            <!--            <t t-if="favicon">-->
+            <!--                <link rel="shortcut icon" t-att-href="favicon" type="image/x-icon"/>-->
+            <!--            </t>-->
+            <link rel="shortcut icon" type="image/png" href="/survey_theme/static/src/images/icon.png"/>
+        </xpath>
+    </template>
+
+    <template id="survey_assets_backend" inherit_id="web.assets_backend" name="web_window_title assets">
+        <xpath expr="." position="inside">
+            <script type="text/javascript" src="/survey_theme/static/src/js/web_window_title.js"/>
+        </xpath>
+    </template>
+</odoo>
