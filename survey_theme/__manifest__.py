@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': 'Quang Theme',
+    'name': 'Custom Theme',
     'version': '1',
     'summary': 'This module add employee form info',
     'description': 'Custom Theme.',

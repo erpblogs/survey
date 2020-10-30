@@ -7,8 +7,8 @@ a:hover{cursor: pointer;text-decoration: none;-webkit-transition: all 0.4s ease 
 p{margin-bottom: 10px;}
 img{max-width:100%!important}
 .font-small{font-size: 75%}
-.text-color-custom{color: #253b80}
-.bg-custom{background: #253b80}
+.text-color-custom{color: #383E45}
+.bg-custom{background: #383E45}
 .btn-custom{
     background: #e9ae06;
     border-radius: 6px;
@@ -20,7 +20,7 @@ img{max-width:100%!important}
 }
 /*Header*/
 .ow-navigation{
-    background: #253b80
+    background: #383E45;
 }
 .ow-navigation .nav>li{
     border-right: 1px solid #ddd;
@@ -76,7 +76,7 @@ img{max-width:100%!important}
 .ow-navigation .nav>li:hover>ul{display: block}
 .ow-navigation .nav>li>ul>li{padding: 7px 10px;border-bottom: 1px solid #dcd8d8}
 .ow-navigation .nav>li>ul>li:last-child{border-bottom: none}
-.ow-navigation .nav>li>ul>li>a{white-space: nowrap; color:#253b80}
+.ow-navigation .nav>li>ul>li>a{white-space: nowrap; color:#383E45;}
 .ow-navigation .nav.nav-fill>li.has-sub>a:after,
 .ow-navigation ul ul li.has-sub>a:after{
     margin-left: 10px;
