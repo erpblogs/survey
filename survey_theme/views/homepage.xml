@@ -3,24 +3,85 @@
     <data>
         <template id="homepage_inherit" inherit_id="website.homepage">
             <xpath expr="//div[@id='wrap']" position="replace">
-                <div class="home-page">
-                    <div class="bg-menu p-4">
-                        <div class="container ">
-                            <div class="d-flex flex-wrap justify-content-center">
-                                <div class="p-2 menu-icon border m-2 rounded">
-                                    <a href="#" class="text-secondary url-text-hover">
-                                        Survey 1
-                                    </a>
-                                </div>
-                                <div class="p-2 menu-icon border m-2 rounded">
-                                    <a href="#" class="text-secondary url-text-hover">
-                                        Survey 2
-                                    </a>
-                                </div>
+                <div id="wrap" class="home-page oe_structure oe_empty">
+                    <section>
+                        <div class="bg-menu p-4">
+                            <div class="container ">
+                                <div class="d-flex flex-wrap justify-content-center">
+                                    <div class="p-2 menu-icon border m-2 rounded">
+                                        <a href="#" class="text-secondary url-text-hover">
+                                            Survey 1
+                                        </a>
+                                    </div>
+                                    <div class="p-2 menu-icon border m-2 rounded">
+                                        <a href="#" class="text-secondary url-text-hover">
+                                            Survey 2
+                                        </a>
+                                    </div>
 
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </section>
+                    <section
+                            class="s_image_gallery s_image_gallery_show_indicators s_image_gallery_indicators_rounded o_fake_not_editable o_colored_level o_slideshow s_image_gallery_cover"
+                            data-vcss="001" data-columns="3" style="overflow: hidden; height: 706px;"
+                            data-snippet="s_image_gallery" data-name="Image Gallery">
+                        <div class="container-fluid" style="padding: 0;">
+                            <div id="slideshow_1604052381311" class="carousel slide" data-ride="carousel"
+                                 data-interval="0"
+                                 style="margin: 0;">
+                                <div class="carousel-inner" style="padding: 0;">
+                                    <div class="carousel-item active" style="min-height: 682px;">
+                                        <img class="img img-fluid d-block"
+                                             src="survey_theme/static/src/images/118114830_328729891605942_2929100869017000012_n.jpg"
+                                             style="" alt="" data-name="Image" data-index="0" data-original-id="139"
+                                             data-mimetype="image/jpeg" data-original-title="" title=""
+                                             aria-describedby="tooltip237346" loading="lazy"/>
+                                    </div>
+                                    <div class="carousel-item undefined" style="min-height: 682px;">
+                                        <img class="img img-fluid d-block "
+                                             src="survey_theme/static/src/images/118182571_1539858226220937_1860686480180377359_n.jpg"
+                                             style="" alt="" data-name="Image" data-index="1" loading="lazy"/>
+                                    </div>
+                                    <div class="carousel-item undefined" style="min-height: 682px;">
+                                        <img class="img img-fluid d-block "
+                                             src="survey_theme/static/src/images/118458926_644435732864881_3021086842065892785_n.jpg"
+                                             style="" alt="" data-name="Image" data-index="2" loading="lazy"/>
+                                    </div>
+                                </div>
+                                <ul class="carousel-indicators">
+
+                                    <li data-target="#slideshow_1604052381311" data-slide-to="0" class="active"
+                                        style="background-image: url(survey_theme/static/src/images/118114830_328729891605942_2929100869017000012_n.jpg)"></li>
+                                    <li data-target="#slideshow_1604052381311" data-slide-to="1"
+                                        style="background-image: url(survey_theme/static/src/images/118182571_1539858226220937_1860686480180377359_n.jpg)"></li>
+                                    <li data-target="#slideshow_1604052381311" data-slide-to="2"
+                                        style="background-image: url(survey_theme/static/src/images/118458926_644435732864881_3021086842065892785_n.jpg)"></li>
+
+                                </ul>
+                                <a class="carousel-control-prev o_we_no_overlay" href="#slideshow_1604052381311"
+                                   data-slide="prev" aria-label="Previous" title="Previous">
+                                    <span class="fa fa-chevron-left fa-2x text-white"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next o_we_no_overlay" href="#slideshow_1604052381311"
+                                   data-slide="next" aria-label="Next" title="Next">
+                                    <span class="fa fa-chevron-right fa-2x text-white"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="s_latest_posts pt16 pb16 o_colored_level" data-vcss="001"
+                             data-snippet="s_latest_posts" data-name="Blog Posts">
+                        <div class="container">
+                            <div class="row s_col_no_bgcolor s_nb_column_fixed js_get_posts s_latest_posts_big_picture s_latest_posts_effect_marley"
+                                 data-loading="true" data-template="website_blog.s_latest_posts_big_picture_template"
+                                 data-filter-by-blog-id="0" data-order="published_date desc" contenteditable="False">
+                            </div>
+                        </div>
+                    </section>
                 </div>
                 <a id="goTop" href="#" title="Back to top">Go top</a>
             </xpath>
