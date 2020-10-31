@@ -48,10 +48,10 @@
                         <a href="http://localhost:8069/survey/start/4ead4bc8-b8f2-4760-a682-1fde8ddb95ac">Khai báo thông tin cá nhân</a>
                     </li>
                     <li>
-                        <a href="#">Khảo sát về điều kiện làm việc</a>
+                        <a href="http://localhost:8069/survey/start/4ead4bc8-b8f2-4760-a682-ksdklamviec1">Khảo sát về điều kiện làm việc</a>
                     </li>
                     <li>
-                        <a href="#">Khảo sát về sức khoẻ nghề nghiệp</a>
+                        <a href="http://localhost:8069/survey/start/4ead4bc8-b8f2-4760-a682-ksttsuckhoe1">Khảo sát về sức khoẻ nghề nghiệp</a>
                     </li>
                 </ul>
             </div>

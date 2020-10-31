@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+        <record model="survey.survey" id="survey_user_hear_ksdklamviec1">
+            <field name="title">Khảo sát điều kiện làm việc</field>
+            <field name="access_token">4ead4bc8-b8f2-4760-a682-ksdklamviec1</field>
+            <field name="state">open</field>
+            <field name="access_mode">public</field>
+            <field name="questions_layout">page_per_question</field>
+            <field name="users_can_go_back" eval="True"/>
+            <field name="users_login_required" eval="True"/>
+            <field name="scoring_type">no_scoring</field>
+            <!--        <field name="certification" eval="False"/>-->
+            <!--        <field name="certification_mail_template_id" ref="mail_template_certification"></field>-->
+            <field name="is_attempts_limited" eval="False"/>
+            <field name="description" type="html">
+                <p>
+                    <h3>Hệ thống đánh giá điều kiện làm việc</h3>
+                    Hệ thống <b>đánh giá điều kiện làm việc</b> bao gồm 8 tiêu chuẩn cơ bản, được xây dựng trên cơ sở
+                    các
+                    tiêu chuẩn lao động quốc tế và pháp luật Lao động Việt Nam. Mỗi tiêu chuẩn được giải thích bằng 10
+                    tiêu chí nhỏ.
+                    <br/>
+                    Thông qua việc tự đánh giá, bạn sẽ biết được mức độ tuân thủ từng tiêu chuẩn lao động tại doanh
+                    nghiệp của mình như thế nào.
+                    <br/>
+                    Lý tưởng thì bạn nên thực hiện đánh giá đầy đủ cả 8 tiêu chuẩn. Nếu không có khả năng hoàn hành cả 8
+                    tiêu chuẩn cùng một lúc, bạn chỉ cần đánh giá ít nhất 4 trên 8 tiêu chuẩn.
+                    <br/>
+                    Trong quá trình tự điền thông tin mà muốn thoát ứng dụng và lần sau làm tiếp, bạn chỉ cần bấm vào
+                    nút “LƯU THÔNG TIN”.
+                </p>
+                <p>
+                    <h3>Với từng tiêu chuẩn, thang đánh giá có 5 cấp độ:</h3>
+                    <ol style="margin-bottom: 0px;">
+                        <li style="list-style-type: lower-roman; ">
+                            Đã thực hiện đầy đủ:
+                            <br/>
+                            Doanh nghiệp đã thực hiện 100% nội dung tiêu chí đánh giá, áp
+                            dụng với toàn thể người lao động trong doanh nghiệ
+                        </li>
+                        <li style="list-style-type: lower-roman; ">
+                            Thực hiện một phần:
+                            <br/>
+                            Doanh nghiệp có thực hiện tiêu chí đánh giá nhưng không đầy đủ,
+                            chỉ áp dụng với một số nhóm lao động nhất định mà không phải toàn bộ người lao động.
+                        </li>
+                        <li style="list-style-type: lower-roman; ">
+                            Không thực hiện:
+                            <br/>
+                            Doanh nghiệp hoàn toàn không thực hiện tiêu chí đánh giá, có cơ sở
+                            để chỉ ra là doanh nghiệp không thực hiện
+                        </li>
+                        <li style="list-style-type: lower-roman; ">
+                            Không biết:
+                            <br/>
+                            Bản thân không có thông tin hoặc không thấy tin tưởng với hiểu biết của bản thân về
+                            thực hành của doanh nghiệp
+                        </li>
+                        <li style="list-style-type: lower-roman; ">
+                            Không phù hợp:<br/>Nội dung đánh giá không phù hợp với thực tế doanh nghiệp.
+                        </li>
+                    </ol>
+                </p>
+                <br/>
+                <img class="img-fluid o_we_custom_image"
+                     src="/main_module/static/src/images/7c03c615-c1f2-428f-9294-88495919dfcb.png"
+                     alt="8-tieu-chuan-danh-gia"/>
+                <br/>
+            </field>
+            <field name="background_image" type="base64" file="survey/static/src/img/survey_background_2.jpg"/>
+        </record>
+
+        <!-- Page 1: Start -->
+        <record id="survey_user_hear_ksdklamviec1_p1" model="survey.question">
+            <field name="title">1. Quyền đươc làm việc và tự do lựa chọn việc làm</field>
+            <field name="survey_id" ref="survey_user_hear_ksdklamviec1"/>
+            <field name="sequence">1</field>
+            <field name="question_type" eval="False"/>
+            <field name="is_page" eval="True"/>
+        </record>
+        <!-- Page 1: question 1  -->
+        <record id="survey_user_hear_ksdklamviec1_p1_q1" model="survey.question">
+            <field name="survey_id" ref="survey_user_hear_ksdklamviec1"/>
+            <field name="sequence">2</field>
+            <field name="title">1.1 Không thu bất cứ khoản phí nào trong quá trình tuyển dụng lao động</field>
+            <field name="question_type">simple_choice</field>
+            <field name="constr_mandatory" eval="True"/>
+        </record>
+        <record id="survey_user_hear_ksdklamviec1_p1_q1_sug1" model="survey.question.answer">
+            <field name="question_id" ref="survey_user_hear_ksdklamviec1_p1_q1"/>
+            <field name="sequence">1</field>
+            <field name="value">Đã thực hiện đầy đủ</field>
+        </record>
+        <record id="survey_user_hear_ksdklamviec1_p1_q1_sug2" model="survey.question.answer">
+            <field name="question_id" ref="survey_user_hear_ksdklamviec1_p1_q1"/>
+            <field name="sequence">2</field>
+            <field name="value">Thực hiện một phần</field>
+        </record>
+        <record id="survey_user_hear_ksdklamviec1_p1_q1_sug3" model="survey.question.answer">
+            <field name="question_id" ref="survey_user_hear_ksdklamviec1_p1_q1"/>
+            <field name="sequence">3</field>
+            <field name="value">Không thực hiện</field>
+        </record>
+        <record id="survey_user_hear_ksdklamviec1_p1_q1_sug4" model="survey.question.answer">
+            <field name="question_id" ref="survey_user_hear_ksdklamviec1_p1_q1"/>
+            <field name="sequence">4</field>
+            <field name="value">Không biết</field>
+        </record>
+        <record id="survey_user_hear_ksdklamviec1_p1_q1_sug5" model="survey.question.answer">
+            <field name="question_id" ref="survey_user_hear_ksdklamviec1_p1_q1"/>
+            <field name="sequence">5</field>
+            <field name="value">Không phù hợp</field>
+        </record>
+        
+        <!-- Page 1: question 2  -->
+        <record id="survey_user_hear_ksdklamviec1_p1_q2" model="survey.question">
+            <field name="survey_id" ref="survey_user_hear_ksdklamviec1"/>
+            <field name="sequence">3</field>
+            <field name="title">1.2 Không thu, giữ bản chính giấy tờ tùy thân, văn bằng, chứng chỉ… của người lao động</field>
+            <field name="question_type">simple_choice</field>
+            <field name="constr_mandatory" eval="True"/>
+        </record>
+        <record id="survey_user_hear_ksdklamviec1_p1_q2_sug1" model="survey.question.answer">
+            <field name="question_id" ref="survey_user_hear_ksdklamviec1_p1_q2"/>
+            <field name="sequence">1</field>
+            <field name="value">Đã thực hiện đầy đủ</field>
+        </record>
+        <record id="survey_user_hear_ksdklamviec1_p1_q2_sug2" model="survey.question.answer">
+            <field name="question_id" ref="survey_user_hear_ksdklamviec1_p1_q2"/>
+            <field name="sequence">2</field>
+            <field name="value">Thực hiện một phần</field>
+        </record>
+        <record id="survey_user_hear_ksdklamviec1_p1_q2_sug3" model="survey.question.answer">
+            <field name="question_id" ref="survey_user_hear_ksdklamviec1_p1_q2"/>
+            <field name="sequence">3</field>
+            <field name="value">Không thực hiện</field>
+        </record>
+        <record id="survey_user_hear_ksdklamviec1_p1_q2_sug4" model="survey.question.answer">
+            <field name="question_id" ref="survey_user_hear_ksdklamviec1_p1_q2"/>
+            <field name="sequence">4</field>
+            <field name="value">Không biết</field>
+        </record>
+        <record id="survey_user_hear_ksdklamviec1_p1_q2_sug5" model="survey.question.answer">
+            <field name="question_id" ref="survey_user_hear_ksdklamviec1_p1_q2"/>
+            <field name="sequence">5</field>
+            <field name="value">Không phù hợp</field>
+        </record>
+    </data>
+</odoo>
