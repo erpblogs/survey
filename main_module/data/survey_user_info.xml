@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+        <record model="survey.survey" id="survey_user_info">
+            <field name="title">Khai báo thông tin cá nhân</field>
+            <field name="access_token">4ead4bc8-b8f2-4760-a682-1fde8ddb95ac</field>
+            <field name="state">open</field>
+            <field name="access_mode">public</field>
+            <field name="questions_layout">page_per_question</field>
+            <field name="users_can_go_back" eval="True"/>
+            <field name="users_login_required" eval="True"/>
+            <field name="scoring_type">no_scoring</field>
+            <!--        <field name="certification" eval="False"/>-->
+            <!--        <field name="certification_mail_template_id" ref="mail_template_certification"></field>-->
+            <field name="is_attempts_limited" eval="False"/>
+            <field name="description" type="html">
+                <p>Vui lòng cập nhật đầy đủ thông tin để có trải nghiệm tốt hơn với các tính năng của app. <br/>
+                    Thông tin nhập vào ghi bằng tiếng Việt có dấu. <br/>
+                    Chúng tôi cam kết KHÔNG TIẾT LỘ THÔNG TIN với một bên thứ ba, trừ khi có sự cho phép của bạn.!
+                </p>
+            </field>
+            <field name="background_image" type="base64" file="survey/static/src/img/survey_background_2.jpg"/>
+        </record>
+
+        <!-- Page 1: Start -->
+        <record id="survey_user_info_p1" model="survey.question">
+            <field name="title">Khai báo thông tin các nhân</field>
+            <field name="survey_id" ref="survey_user_info"/>
+            <field name="sequence">1</field>
+            <field name="question_type" eval="False"/>
+            <field name="is_page" eval="True"/>
+        </record>
+        <record id="survey_user_info_p1_q1" model="survey.question">
+            <field name="survey_id" ref="survey_user_info"/>
+            <field name="sequence">2</field>
+            <field name="title">Năm sinh</field>
+            <field name="question_type">date</field>
+            <field name="constr_mandatory" eval="True"/>
+        </record>
+
+        <record id="survey_user_info_p1_q2" model="survey.question">
+            <field name="survey_id" ref="survey_user_info"/>
+            <field name="sequence">3</field>
+            <field name="title">Giới tính</field>
+            <field name="question_type">simple_choice</field>
+            <field name="constr_mandatory" eval="True"/>
+        </record>
+        <record id="survey_user_info_p1_q2_sug1" model="survey.question.answer">
+            <field name="question_id" ref="survey_user_info_p1_q2"/>
+            <field name="sequence">1</field>
+            <field name="value">Nam</field>
+        </record>
+        <record id="survey_user_info_p1_q2_sug2" model="survey.question.answer">
+            <field name="question_id" ref="survey_user_info_p1_q2"/>
+            <field name="sequence">2</field>
+            <field name="value">Nữ</field>
+        </record>
+        <record id="survey_user_info_p1_q2_sug3" model="survey.question.answer">
+            <field name="question_id" ref="survey_user_info_p1_q2"/>
+            <field name="sequence">4</field>
+            <field name="value">Khác</field>
+        </record>
+
+        <record id="survey_user_info_p1_q3" model="survey.question">
+            <field name="survey_id" ref="survey_user_info"/>
+            <field name="sequence">3</field>
+            <field name="title">Nhà máy</field>
+            <field name="question_type">char_box</field>
+            <field name="constr_mandatory" eval="True"/>
+        </record>
+
+        <record id="survey_user_info_p1_q4" model="survey.question">
+            <field name="survey_id" ref="survey_user_info"/>
+            <field name="sequence">4</field>
+            <field name="title">Địa chỉ nhà máy (ghi rõ Phường/Xã - Quận/Huyện - Tỉnh/Thành Phố)</field>
+            <field name="question_type">text_box</field>
+            <field name="constr_mandatory" eval="True"/>
+        </record>
+
+        <record id="survey_user_info_p1_q5" model="survey.question">
+            <field name="survey_id" ref="survey_user_info"/>
+            <field name="sequence">5</field>
+            <field name="title">Phân xưởng làm việc</field>
+            <field name="question_type">char_box</field>
+            <field name="constr_mandatory" eval="True"/>
+        </record>
+        <record id="survey_user_info_p1_q6" model="survey.question">
+            <field name="survey_id" ref="survey_user_info"/>
+            <field name="sequence">6</field>
+            <field name="title">Vị trí làm việc</field>
+            <field name="question_type">char_box</field>
+            <field name="constr_mandatory" eval="True"/>
+        </record>
+
+
+        <record id="survey_user_info_p1_q7" model="survey.question">
+            <field name="survey_id" ref="survey_user_info"/>
+            <field name="sequence">7</field>
+            <field name="title">Ngày bắt đầu làm việc</field>
+            <field name="question_type">date</field>
+            <field name="constr_mandatory" eval="True"/>
+        </record>
+        <record id="survey_user_info_p1_q8" model="survey.question">
+            <field name="survey_id" ref="survey_user_info"/>
+            <field name="sequence">8</field>
+            <field name="title">Số năm kinh nghiệm</field>
+            <field name="question_type">numerical_box</field>
+        </record>
+    </data>
+</odoo>
+

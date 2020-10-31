@@ -16,8 +16,10 @@ Allow users to sign up and reset their password
         'mail',
         'web',
         'hr',
+        'survey',
     ],
     'data': [
+        'data/survey_user_info.xml',
         'views/res_users_views.xml',
         'views/auth_signup_login_templates.xml',
         'views/portal_templates.xml',

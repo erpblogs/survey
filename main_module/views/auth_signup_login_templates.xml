@@ -4,6 +4,18 @@
         <template id="auth_signup.fields_inherit" inherit_id="auth_signup.fields">
             <xpath expr="//div[last()]" position="after">
                 <div class="form-group" data-type="many2one" data-name="Field">
+                    <label for="department_id" class="col-form-label col-sm-auto s_website_form_label ">Department</label>
+                    <select class="form-control form-control-sm" name="department_id" id="department_id" style="">
+                        <t t-foreach="department_ids or []" t-as="department_id">
+                            <option t-att-value="department_id.id"
+                                    t-att-selected="department_id.id == int(department_id) if department_id else department_id.id == 1">
+                                <t t-esc="department_id.name"/>
+                            </option>
+                        </t>
+                        <option value="">Không thuộc các lĩnh vực trên</option>
+                    </select>
+                </div>
+                <div class="form-group" data-type="many2one" data-name="Field">
                     <label for="job_id" class="col-form-label col-sm-auto s_website_form_label ">Job position</label>
                     <select class="form-control form-control-sm" name="job_id" id="job_id" style="">
                         <t t-foreach="job_ids or []" t-as="job_id">

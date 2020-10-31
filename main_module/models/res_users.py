@@ -17,10 +17,12 @@ from odoo.addons.auth_signup.models.res_partner import SignupError, now
 
 _logger = logging.getLogger(__name__)
 
-class ResUsers(models.Model):
+
+class ResUsersInherit(models.Model):
     _inherit = 'res.users'
 
     job_id = fields.Many2one('hr.job', 'Job Position', track_visibility='onchange')
+    department_id = fields.Many2one('hr.department', 'Department', track_visibility='onchange')
 
     @api.model
     def signup(self, values, token=None):
@@ -73,4 +75,3 @@ class ResUsers(models.Model):
             self._signup_create_user(values)
 
         return (self.env.cr.dbname, values.get('login'), values.get('password'))
-

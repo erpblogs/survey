@@ -12,14 +12,15 @@ _logger = logging.getLogger(__name__)
 
 class AuthSignupHomeInherit(AuthSignupHome):
     def get_auth_signup_qcontext(self):
-        qcontext = super(AuthSignupHome, self).get_auth_signup_qcontext()
+        qcontext = super(AuthSignupHomeInherit, self).get_auth_signup_qcontext()
+        department_ids = request.env['hr.department'].sudo().search([], order='name')
         job_ids = request.env['hr.job'].sudo().search([], order='name')
-        qcontext.update({'job_ids': job_ids})
+        qcontext.update({'job_ids': job_ids, 'department_ids': department_ids})
         return qcontext
 
     def do_signup(self, qcontext):
         """ Shared helper that creates a res.partner out of a token """
-        values = {key: qcontext.get(key) for key in ('login', 'name', 'password', 'job_id')}
+        values = {key: qcontext.get(key) for key in ('login', 'name', 'password', 'job_id', 'department_id')}
         if not values:
             raise UserError(_("The form was not properly filled in."))
         if values.get('password') != qcontext.get('confirm_password'):

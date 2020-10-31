@@ -3,10 +3,23 @@
     <template id="portal_inherit" inherit_id="portal.portal_my_details">
         <xpath expr="//input[@name='redirect']" position="before">
             <div class="col-xl-6" data-type="many2one" data-name="Field">
+                <label class="col-form-label" for="department_id">Department</label>
+                <select name="department_id" t-attf-class="form-control">
+                    <t t-foreach="department_ids or []" t-as="department_id">
+                        <option t-att-value="department_id.id"
+                                t-att-selected="department_id.id == partner.department_id.id">
+                            <t t-esc="department_id.name"/>
+                        </option>
+                    </t>
+                    <option value="">Không thuộc các lĩnh vực trên</option>
+                </select>
+            </div>
+            <div class="col-xl-6" data-type="many2one" data-name="Field">
                 <label class="col-form-label label-optional" for="job_id">Job position</label>
                 <select name="job_id" t-attf-class="form-control">
                     <t t-foreach="job_ids or []" t-as="job_id">
-                        <option t-att-value="job_id.id"
+                        <option t-att-value="job_id.id" style="display:none;"
+                                t-att-data-country_id="state.department_id.id"
                                 t-att-selected="job_id.id == partner.job_id.id">
                             <t t-esc="job_id.name"/>
                         </option>
@@ -20,16 +33,42 @@
     <template id="custom_portal_layout" inherit_id="portal.portal_layout">
         <xpath expr="//div[hasclass('o_portal_my_details')]/div" position="replace">
             <div t-field="user_id.partner_id"
-                 t-options='{"widget": "contact", "fields": ["email", "phone", "address", "name", "job_id"]}'/>
+                 t-options='{"widget": "contact", "fields": ["email", "phone", "address", "name", "job_id", "department_id"]}'/>
+        </xpath>
+    </template>
+
+    <template id="custom_portal_my_home" inherit_id="portal.portal_my_home">
+        <xpath expr="//div[@id='oe_structure_portal_my_home_1']" position="before">
+            <div id="oe_structure_portal_survey">
+                <h3>
+                    Survey
+                </h3>
+                <ul>
+                    <li>
+                        <a href="http://localhost:8069/survey/start/4ead4bc8-b8f2-4760-a682-1fde8ddb95ac">Khai báo thông tin cá nhân</a>
+                    </li>
+                    <li>
+                        <a href="#">Khảo sát về điều kiện làm việc</a>
+                    </li>
+                    <li>
+                        <a href="#">Khảo sát về sức khoẻ nghề nghiệp</a>
+                    </li>
+                </ul>
+            </div>
         </xpath>
     </template>
 
     <template id="custom_contact" inherit_id="base.contact">
         <xpath expr="//div[@itemprop='address']/div[last()]" position="after">
+            <div t-if="department_id and 'department_id' in fields">
+                <i t-if="not options.get('no_marker')"
+                   class='fa fa-envelope fa-fw' role="img" aria-label="Job Position" title="Job Position"/>
+                <span itemprop="department_id" t-esc="department_id"/>
+            </div>
             <div t-if="job_id and 'job_id' in fields">
                 <i t-if="not options.get('no_marker')"
                    class='fa fa-envelope fa-fw' role="img" aria-label="Job Position" title="Job Position"/>
-                <span itemprop="job_id" t-esc="job_id" />
+                <span itemprop="job_id" t-esc="job_id"/>
             </div>
         </xpath>
     </template>
