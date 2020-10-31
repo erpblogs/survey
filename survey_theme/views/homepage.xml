@@ -10,12 +10,12 @@
                                 <div class="d-flex flex-wrap justify-content-center">
                                     <div class="p-2 menu-icon border m-2 rounded">
                                         <a href="#" class="text-secondary url-text-hover">
-                                            Survey 1
+                                            Đánh giá điều kiện làm việc
                                         </a>
                                     </div>
                                     <div class="p-2 menu-icon border m-2 rounded">
                                         <a href="#" class="text-secondary url-text-hover">
-                                            Survey 2
+                                            Chăm sóc sức khỏe nghề nghiệp
                                         </a>
                                     </div>
 
@@ -23,54 +23,42 @@
                             </div>
                         </div>
                     </section>
-                    <section
-                            class="s_image_gallery s_image_gallery_show_indicators s_image_gallery_indicators_rounded o_fake_not_editable o_colored_level o_slideshow s_image_gallery_cover"
-                            data-vcss="001" data-columns="3" style="overflow: hidden; height: 706px;"
-                            data-snippet="s_image_gallery" data-name="Image Gallery">
-                        <div class="container-fluid" style="padding: 0;">
-                            <div id="slideshow_1604052381311" class="carousel slide" data-ride="carousel"
-                                 data-interval="0"
-                                 style="margin: 0;">
-                                <div class="carousel-inner" style="padding: 0;">
-                                    <div class="carousel-item active" style="min-height: 682px;">
-                                        <img class="img img-fluid d-block"
-                                             src="survey_theme/static/src/images/118114830_328729891605942_2929100869017000012_n.jpg"
-                                             style="" alt="" data-name="Image" data-index="0" data-original-id="139"
-                                             data-mimetype="image/jpeg" data-original-title="" title=""
-                                             aria-describedby="tooltip237346" loading="lazy"/>
-                                    </div>
-                                    <div class="carousel-item undefined" style="min-height: 682px;">
-                                        <img class="img img-fluid d-block "
-                                             src="survey_theme/static/src/images/118182571_1539858226220937_1860686480180377359_n.jpg"
-                                             style="" alt="" data-name="Image" data-index="1" loading="lazy"/>
-                                    </div>
-                                    <div class="carousel-item undefined" style="min-height: 682px;">
-                                        <img class="img img-fluid d-block "
-                                             src="survey_theme/static/src/images/118458926_644435732864881_3021086842065892785_n.jpg"
-                                             style="" alt="" data-name="Image" data-index="2" loading="lazy"/>
-                                    </div>
-                                </div>
-                                <ul class="carousel-indicators">
-
-                                    <li data-target="#slideshow_1604052381311" data-slide-to="0" class="active"
-                                        style="background-image: url(survey_theme/static/src/images/118114830_328729891605942_2929100869017000012_n.jpg)"></li>
-                                    <li data-target="#slideshow_1604052381311" data-slide-to="1"
-                                        style="background-image: url(survey_theme/static/src/images/118182571_1539858226220937_1860686480180377359_n.jpg)"></li>
-                                    <li data-target="#slideshow_1604052381311" data-slide-to="2"
-                                        style="background-image: url(survey_theme/static/src/images/118458926_644435732864881_3021086842065892785_n.jpg)"></li>
-
-                                </ul>
-                                <a class="carousel-control-prev o_we_no_overlay" href="#slideshow_1604052381311"
-                                   data-slide="prev" aria-label="Previous" title="Previous">
-                                    <span class="fa fa-chevron-left fa-2x text-white"></span>
-                                    <span class="sr-only">Previous</span>
-                                </a>
-                                <a class="carousel-control-next o_we_no_overlay" href="#slideshow_1604052381311"
-                                   data-slide="next" aria-label="Next" title="Next">
-                                    <span class="fa fa-chevron-right fa-2x text-white"></span>
-                                    <span class="sr-only">Next</span>
-                                </a>
-                            </div>
+                    <section class="s_text_block pt32 pb32 o_colored_level" data-snippet="s_text_block"
+                             data-name="Text">
+                        <div class="s_allow_columns container">
+                            <p>Ứng dụng được xây dựng nhằm hỗ trợ CÔNG NHÂN làm việc trong các ngành điện tử, may mặc
+                                nhận diện,
+                                theo dõi và giám sát các vấn đề về điều kiện làm việc;
+                                theo dõi tình trạng sức khỏe theo thời gian, phát hiện sớm các bệnh liên quan đến nghề
+                                nghiệp.
+                                Thông qua các gợi ý app đưa ra, tự bản thân người lao động
+                                có thể chủ động tìm kiếm các hỗ trợ khác nhau để cải thiện điều kiện làm việc tốt hơn,
+                                nâng cao sức khỏe và khả năng lao động.
+                            </p>
+                            <p>Lợi ích gia tăng dành cho người dùng:
+                                <br/>
+                                <ol>
+                                    <li>
+                                        Có trong tay công cụ tự đánh giá điều kiện làm việc, sử dụng ở mọi nơi, mọi lúc
+                                        chỉ cần có kết nối internet
+                                    </li>
+                                    <li>
+                                        Lưu trữ thông tin sức khỏe cá nhân theo thời gian
+                                    </li>
+                                    <li>Dễ dàng phát hiện những thay đổi về sức khỏe trong quá trình làm việc
+                                    </li>
+                                    <li>Phát hiện sớm các bệnh liên quan đến nghề nghiệp
+                                    </li>
+                                    <li>Kết nối với các kênh tư vấn pháp luật, an toàn vệ sinh lao động và chăm sóc sức
+                                        khỏe nghề nghiệp
+                                    </li>
+                                    <li>an toàn, tin cậy, miễn phí mà không cần đi xa
+                                    </li>
+                                    <li>Đóng góp thông tin, tiếng nói vào quá trình cải thiện điều kiện làm việc, chăm
+                                        sóc sức khỏe cho người lao động trong các ngành điện tử, may mặc
+                                    </li>
+                                </ol>
+                            </p>
                         </div>
                     </section>
                     <section class="s_latest_posts pt16 pb16 o_colored_level" data-vcss="001"

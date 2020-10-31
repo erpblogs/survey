@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="portal_inherit" inherit_id="portal.portal_my_details">
+        <xpath expr="//input[@name='redirect']" position="before">
+            <div class="col-xl-6" data-type="many2one" data-name="Field">
+                <label class="col-form-label label-optional" for="job_id">Job position</label>
+                <select name="job_id" t-attf-class="form-control">
+                    <t t-foreach="job_ids or []" t-as="job_id">
+                        <option t-att-value="job_id.id"
+                                t-att-selected="job_id.id == partner.job_id.id">
+                            <t t-esc="job_id.name"/>
+                        </option>
+                    </t>
+                    <option value="">Không thuộc các chức vụ trên</option>
+                </select>
+            </div>
+        </xpath>
+    </template>
+
+    <template id="custom_portal_layout" inherit_id="portal.portal_layout">
+        <xpath expr="//div[hasclass('o_portal_my_details')]/div" position="replace">
+            <div t-field="user_id.partner_id"
+                 t-options='{"widget": "contact", "fields": ["email", "phone", "address", "name", "job_id"]}'/>
+        </xpath>
+    </template>
+
+    <template id="custom_contact" inherit_id="base.contact">
+        <xpath expr="//div[@itemprop='address']/div[last()]" position="after">
+            <div t-if="job_id and 'job_id' in fields">
+                <i t-if="not options.get('no_marker')"
+                   class='fa fa-envelope fa-fw' role="img" aria-label="Job Position" title="Job Position"/>
+                <span itemprop="job_id" t-esc="job_id" />
+            </div>
+        </xpath>
+    </template>
+</odoo>

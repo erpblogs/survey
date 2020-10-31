@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="auth_signup.fields_inherit" inherit_id="auth_signup.fields">
+            <xpath expr="//div[last()]" position="after">
+                <div class="form-group" data-type="many2one" data-name="Field">
+                    <label for="job_id" class="col-form-label col-sm-auto s_website_form_label ">Job position</label>
+                    <select class="form-control form-control-sm" name="job_id" id="job_id" style="">
+                        <t t-foreach="job_ids or []" t-as="job_id">
+                            <option t-att-value="job_id.id"
+                                    t-att-selected="job_id.id == int(job_id) if job_id else job_id.id == 1">
+                                <t t-esc="job_id.name"/>
+                            </option>
+                        </t>
+                        <option value="">Không thuộc các chức vụ trên</option>
+                    </select>
+                </div>
+            </xpath>
+        </template>
+
+    </data>
+</odoo>
