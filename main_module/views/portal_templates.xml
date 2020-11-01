@@ -3,7 +3,7 @@
     <template id="portal_inherit" inherit_id="portal.portal_my_details">
         <xpath expr="//input[@name='redirect']" position="before">
             <div class="col-xl-6" data-type="many2one" data-name="Field">
-                <label class="col-form-label" for="department_id">Department</label>
+                <label class="col-form-label" for="department_id">Lĩnh vực làm việc hiện tại</label>
                 <select name="department_id" t-attf-class="form-control">
                     <t t-foreach="department_ids or []" t-as="department_id">
                         <option t-att-value="department_id.id"
@@ -15,7 +15,7 @@
                 </select>
             </div>
             <div class="col-xl-6" data-type="many2one" data-name="Field">
-                <label class="col-form-label label-optional" for="job_id">Job position</label>
+                <label class="col-form-label label-optional" for="job_id">Công việc hiện tại</label>
                 <select name="job_id" t-attf-class="form-control">
                     <t t-foreach="job_ids or []" t-as="job_id">
                         <option t-att-value="job_id.id" style="display:none;"

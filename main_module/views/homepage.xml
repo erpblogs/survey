@@ -8,12 +8,12 @@
 
                         <div class="bg-menu p-4">
                             <div class="container ">
-                                <h3>Khảo sát quan trọng</h3>
+                                <h3>Tính năng chính</h3>
                                 <div class="d-flex flex-wrap justify-content-center">
                                     <div class="p-2 menu-icon border m-2 rounded">
                                         <a href="/survey/start/4ead4bc8-b8f2-4760-a682-1fde8ddb95ac"
                                            class="text-secondary url-text-hover">
-                                            Khai báo thông tin cá nhân
+                                            Thông tin của tôi
                                         </a>
                                     </div>
                                     <div class="p-2 menu-icon border m-2 rounded">

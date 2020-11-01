@@ -6,7 +6,6 @@
             <div class="dropdown-menu dropdown-menu-right" role="menu">
                 <a role="menuitem" href="#" data-menu="settings" class="dropdown-item">Preferences</a>
                 <a role="menuitem" href="/my/home" data-menu="logout" class="dropdown-item">My home</a>
-                <a role="menuitem" href="/my/account" data-menu="logout" class="dropdown-item">My account</a>
                 <div role="separator" class="dropdown-divider"/>
                 <a role="menuitem" href="#" data-menu="logout" class="dropdown-item">Log out</a>
             </div>
