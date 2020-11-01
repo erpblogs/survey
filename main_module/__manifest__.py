@@ -22,6 +22,7 @@ Allow users to sign up and reset their password
         'data/survey_user_info.xml',
         'data/survey_conditional_working.xml',
         'data/survey_user_heart.xml',
+        'views/auth_signup_assets.xml',
         'views/homepage.xml',
         'views/res_users_views.xml',
         'views/auth_signup_login_templates.xml',
